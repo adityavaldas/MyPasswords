@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:background="#ffffff"
+    android:windowSoftInputMode="adjustResize"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/masterKeyTextView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Master Key"
+        android:textColor="#d70040"
+
+        android:textSize="15dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/masterKeyEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:minWidth="250dp"
+        android:background="#dddddd"
+        android:text=""
+        app:layout_constraintLeft_toRightOf="@+id/masterKeyTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/newKeyTextView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="New Key"
+        android:textSize="15dp"
+        android:textColor="#d70040"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/masterKeyTextView" />
+
+    <EditText
+        android:id="@+id/newKeyEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:minWidth="250dp"
+        android:text=""
+        android:background="#dddddd"
+        android:inputType=""
+        app:layout_constraintLeft_toRightOf="@+id/newKeyTextView"
+        app:layout_constraintTop_toTopOf="@id/newKeyTextView" />
+
+    <Button
+        android:id="@+id/setKeyButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="SET KEY"
+        android:backgroundTint="#33aa33"
+        android:textSize="20dp"
+        android:textColor="#222222"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newKeyTextView" />
+
+    <TextView
+        android:id="@+id/setAccTextView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Website"
+        android:textColor="#222222"
+        android:textSize="15dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/setKeyButton" />
+
+    <EditText
+        android:id="@+id/setAccEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:minWidth="250dp"
+        android:inputType="text|textEmailAddress"
+        android:text=""
+        android:background="#dddddd"
+        app:layout_constraintLeft_toRightOf="@+id/setAccTextView"
+        app:layout_constraintTop_toTopOf="@id/setAccTextView" />
+
+    <TextView
+        android:id="@+id/setIDTextView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:textSize="15dp"
+        android:text="ID"
+        android:textColor="#222222"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/setAccTextView" />
+
+    <EditText
+        android:id="@+id/setIDEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:minWidth="250dp"
+        android:text=""
+        android:background="#dddddd"
+        android:inputType="text|textEmailAddress"
+        app:layout_constraintLeft_toRightOf="@+id/setIDTextView"
+        app:layout_constraintTop_toTopOf="@id/setIDTextView" />
+
+    <TextView
+        android:id="@+id/setPassTextView"
+        android:layout_width="100dp"
+        android:textSize="15dp"
+        android:layout_height="50dp"
+        android:text="Password"
+        android:textColor="#222222"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/setIDTextView" />
+
+    <EditText
+        android:id="@+id/setPassEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:minWidth="250dp"
+        android:text=""
+        android:background="#dddddd"
+        app:layout_constraintLeft_toRightOf="@+id/setPassTextView"
+        app:layout_constraintTop_toTopOf="@id/setPassTextView" />
+
+    <Button
+        android:id="@+id/setPassButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="SET PassWORD"
+        android:textSize="20dp"
+        android:textColor="#222222"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#11aa11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setPassTextView" />
+
+    <TextView
+        android:id="@+id/getAccTextView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Website"
+        android:textSize="15dp"
+        android:textColor="#1111FF"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/setPassButton" />
+
+    <EditText
+        android:id="@+id/getAccEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:minWidth="250dp"
+        android:text=""
+        android:background="#dddddd"
+        android:inputType="text|textEmailAddress"
+        app:layout_constraintLeft_toRightOf="@+id/getAccTextView"
+        app:layout_constraintTop_toTopOf="@id/getAccTextView" />
+
+    <TextView
+        android:id="@+id/getIDTextView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="ID"
+        android:textColor="#1111FF"
+        android:textSize="15dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/getAccTextView" />
+
+    <EditText
+        android:id="@+id/getIDEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:minWidth="250dp"
+        android:text=""
+        android:background="#dddddd"
+        android:inputType="text|textEmailAddress"
+        app:layout_constraintLeft_toRightOf="@+id/getIDTextView"
+        app:layout_constraintTop_toTopOf="@id/getIDTextView" />
+
+    <Button
+        android:id="@+id/getPassButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="GET PassWORD"
+        android:textSize="20dp"
+        android:textColor="#222222"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#11aa11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getIDTextView" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:text="CLEAR CONSOLE"
+        android:textSize="18dp"
+        android:textColor="#111111"
+        android:backgroundTint="#808080"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getPassButton" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:text="CLEAR ALL DATA"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:backgroundTint="#ff3344"
+
+        app:layout_constraintLeft_toRightOf="@id/clearButton"
+        app:layout_constraintTop_toBottomOf="@+id/getPassButton" />
+
+    <EditText
+        android:id="@+id/consoleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/clearButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
